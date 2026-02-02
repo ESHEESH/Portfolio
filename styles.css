@@ -5,15 +5,16 @@
 }
 
 :root {
-    --primary-bg: #fafafa;
+    --primary-bg: #f5f5f5;
     --card-bg: #ffffff;
-    --text-primary: #1a1a1a;
+    --text-primary: #000000;
     --text-secondary: #6b6b6b;
-    --accent: #2563eb;
-    --accent-hover: #1d4ed8;
-    --border: #e5e5e5;
-    --shadow: rgba(0, 0, 0, 0.04);
-    --shadow-hover: rgba(0, 0, 0, 0.08);
+    --accent: #2c2c2c;
+    --accent-hover: #000000;
+    --border: #e0e0e0;
+    --shadow: rgba(0, 0, 0, 0.08);
+    --shadow-hover: rgba(0, 0, 0, 0.12);
+    --grey-bg: #f9f9f9;
 }
 
 body {
@@ -47,7 +48,7 @@ header::before {
     right: 0;
     width: 600px;
     height: 100%;
-    background: linear-gradient(135deg, transparent 0%, rgba(37, 99, 235, 0.03) 100%);
+    background: linear-gradient(135deg, transparent 0%, rgba(0, 0, 0, 0.02) 100%);
     pointer-events: none;
 }
 
@@ -128,15 +129,15 @@ h1 {
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem 1.25rem;
-    background: linear-gradient(135deg, rgba(139, 69, 19, 0.05) 0%, rgba(184, 134, 11, 0.05) 100%);
+    background: var(--grey-bg);
     border-radius: 12px;
-    border: 1px solid rgba(139, 69, 19, 0.1);
+    border: 1px solid var(--border);
 }
 
 .university-logo {
     width: 40px;
     height: 40px;
-    background: #8B4513;
+    background: #2c2c2c;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -156,7 +157,7 @@ h1 {
 .university-name {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #8B4513;
+    color: var(--text-primary);
 }
 
 .social-links {
@@ -189,7 +190,7 @@ h1 {
     color: white;
     border-color: var(--accent);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Grid Layout */
@@ -202,7 +203,7 @@ h1 {
 
 /* Cards */
 .card {
-    background: var(--card-bg);
+    background: var(--grey-bg);
     border-radius: 16px;
     padding: 2rem;
     border: 1px solid var(--border);
@@ -294,14 +295,13 @@ h1 {
 .tech-grid {
     display: flex;
     flex-wrap: wrap;
-    
     gap: 0.5rem;
 }
 
 .tech-badge {
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
-    border: 1px solid rgba(37, 99, 235, 0.15);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
     border-radius: 8px;
     font-size: 0.85rem;
     font-weight: 500;
