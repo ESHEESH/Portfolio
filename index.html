@@ -137,7 +137,6 @@
         </div>
     </div>
 
-    <!-- Register Modal -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content" style="border-radius: 8px; border: 1px solid #e5e5e5;">
@@ -208,11 +207,11 @@
             
             alert('Registration successful! You can now log in.');
             
-            // Close modal
+            
             const modal = bootstrap.Modal.getInstance(document.getElementById('registerModal'));
             modal.hide();
             
-            // Clear form
+            
             document.getElementById('registerForm').reset();
         }
     </script>
